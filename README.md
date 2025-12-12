@@ -1,6 +1,9 @@
 Project: Unsupervised Anomaly Detection in System Logs
 
-[Screencast from 2025-12-12 04-23-21.webm](https://github.com/user-attachments/assets/823e7048-e75a-4320-a7e8-fa7f04526686)
+https://github.com/user-attachments/assets/b0695bc5-515a-4559-b523-62ad2c3bc502
+
+
+
 
 Python · Scikit-learn · TF-IDF · Isolation Forest · NLP · Data Visualization
 

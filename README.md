@@ -47,3 +47,11 @@ python3 src/visualize.py
 ```br
 streamlit run src/dashboard.py
 ```
+
+## Metrics
+<img width="275" height="138" alt="Screenshot from 2025-12-13 00-59-09" src="https://github.com/user-attachments/assets/13b274bd-fda9-4f3b-97b0-b5a0f78d3188" />
+
+## Plots
+<img width="1271" height="442" alt="anomaly_timeseries" src="https://github.com/user-attachments/assets/fafe35f4-ad3a-48ba-9e36-890b14ebf047" />
+
+<img width="891" height="789" alt="pca" src="https://github.com/user-attachments/assets/887e7bb8-dcb4-4099-ba03-8d967802c76a" />

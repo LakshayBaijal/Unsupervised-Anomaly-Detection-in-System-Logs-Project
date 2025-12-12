@@ -12,4 +12,38 @@ Python · Scikit-learn · TF-IDF · Isolation Forest · NLP · Data Visualizatio
 - Injected synthetic anomalies and achieved ~91% detection accuracy, demonstrating robustness across varied log types.
 - Visualized anomaly scores and clustered log behavior using PCA and Matplotlib for interpretable security insights.
 
-This description is perfectly sized, powerful, and safe in interviews.
+- Run the Dynamic Parser
+
+```br
+python3 src/parser.py data/Linux_2k.log
+```
+
+- Build TF-IDF Features
+
+```br
+python3 src/features.py data/parsed_logs.csv
+```
+
+- Train The Isolation Forest Model
+
+```br
+python3 src/model.py data/features.npz
+```
+
+- Evaluate Synthetic Anomaly
+
+```br
+python3 src/evaluate.py
+```
+
+- Visualizations
+
+```br
+python3 src/visualize.py
+```
+
+- Run the Dashboard
+
+```br
+streamlit run src/dashboard.py
+```

@@ -55,3 +55,7 @@ streamlit run src/dashboard.py
 <img width="1271" height="442" alt="anomaly_timeseries" src="https://github.com/user-attachments/assets/fafe35f4-ad3a-48ba-9e36-890b14ebf047" />
 
 <img width="891" height="789" alt="pca" src="https://github.com/user-attachments/assets/887e7bb8-dcb4-4099-ba03-8d967802c76a" />
+
+
+Keywords- 
+tutorial, from-scratch, how-to, example, demo, install, run, dataset, colab, c++, linux, system-calls, object-detection, opencv

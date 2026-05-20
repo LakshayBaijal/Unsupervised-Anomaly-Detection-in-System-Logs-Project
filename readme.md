@@ -165,3 +165,9 @@ Peak Memory Usage:   0.5949 MB
 *   **True Negatives (TN):** Normal logs correctly flagged as normal.
 *   **False Positives (FP):** Normal logs incorrectly flagged as anomalies (False Alarms).
 *   **False Negatives (FN):** Anomalies incorrectly flagged as normal logs (Misses).
+
+- Anomaly Timeseries
+<img width="1284" height="442" alt="image" src="https://github.com/user-attachments/assets/95da0784-1e11-44a2-8a25-e974afd97947" />
+
+- PCA
+<img width="891" height="789" alt="image" src="https://github.com/user-attachments/assets/453dea63-7afc-4f5f-b3a6-3fc002d5e681" />

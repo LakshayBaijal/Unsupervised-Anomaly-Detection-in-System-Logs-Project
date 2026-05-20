@@ -14,7 +14,7 @@ The system follows a modular data pipeline design:
 3. **Model Training (`src/model.py`)**: Trains an unsupervised **Isolation Forest** model to detect outliers without relying on labeled data.
 4. **Evaluation (`src/evaluate.py`)**: Synthetically injects anomalies to rigorously test and evaluate the model's performance on heavily imbalanced datasets.
 5. **Dashboard & Visualization (`src/dashboard.py` / `src/visualize.py`)**: Provides interactive plotting and insights into anomaly scores, distributions, and log groupings.
-
+---
 ## 📂 Repository Structure
 
 ```text
@@ -31,7 +31,7 @@ The system follows a modular data pipeline design:
 ├── requirements.txt    # Python dependencies
 └── readme.md           # Project documentation
 ```
-
+---
 ## 🛠️ Setup & Installation
 
 1. **Clone the repository:**
@@ -85,7 +85,7 @@ python src/visualize.py
 ```bash
 streamlit run src/dashboard.py
 ```
-
+---
 ## Evaluation Metrics & Benchmarks
 
 Our model has been rigorously evaluated using an extended suite of metrics suited for highly imbalanced anomaly detection. Below are the latest benchmark results and a detailed explanation of what each metric means and how it is calculated.
@@ -124,7 +124,7 @@ Total Inference Time:0.1031 seconds
 Latency per Sample:  0.0516 ms
 Peak Memory Usage:   0.5949 MB
 ```
-
+---
 ### 2. Standard Evaluation Metrics
 
 *   **Precision:** Represents the proportion of predicted anomalies that were actually anomalies. 
@@ -137,7 +137,7 @@ Peak Memory Usage:   0.5949 MB
     *   **Formula:** $F2 = (1 + 2^2) \times \frac{Precision \times Recall}{(2^2 \times Precision) + Recall}$
 *   **ROC AUC (Receiver Operating Characteristic - Area Under Curve):** Measures the trade-off between True Positive Rate and False Positive Rate across all thresholds. An AUC of 0.9920 indicates excellent separability.
 *   **PR AUC (Precision-Recall Area Under Curve):** More robust than ROC AUC for heavily imbalanced datasets. It evaluates the model strictly on its ability to handle the rare anomaly class.
-
+---
 ### 3. Extended Statistical Benchmark Metrics
 
 *   **Accuracy:** Overall percentage of correct predictions regardless of class. Notoriously misleading for imbalanced data, but provided for completeness.
@@ -158,14 +158,14 @@ Peak Memory Usage:   0.5949 MB
     *   **Formula:** $MCC = \frac{TP \times TN - FP \times FN}{\sqrt{(TP+FP)(TP+FN)(TN+FP)(TN+FN)}}$
 *   **Brier Score:** Evaluates the mean squared difference between predicted probability scores and the actual labels. Lower is better.
     *   **Formula:** $Brier = \frac{1}{N} \sum (predicted\_prob - actual)^2$
-
+---
 ### 4. Confusion Matrix Terminology
 
 *   **True Positives (TP):** Anomalies correctly flagged as anomalies.
 *   **True Negatives (TN):** Normal logs correctly flagged as normal.
 *   **False Positives (FP):** Normal logs incorrectly flagged as anomalies (False Alarms).
 *   **False Negatives (FN):** Anomalies incorrectly flagged as normal logs (Misses).
-
+---
 - Anomaly Timeseries
 <img width="1284" height="442" alt="image" src="https://github.com/user-attachments/assets/95da0784-1e11-44a2-8a25-e974afd97947" />
 
